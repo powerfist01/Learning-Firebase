@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Firebase Web Learn Database(001)</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="input-group input-group-lg" style="padding-top: 100px;;">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Enter Message:</span>
+      </div>
+      <input type="text" id="message" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+    </div>
+    <br>
+    <div style="text-align: center;">
+      <button type="button" id="saveBtn" class="btn btn-secondary btn-lg">Large button</button>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-database.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCcO4B1P1r-EXiWo3LUjJ_B8yvmhQemcCA",
+      authDomain: "fir-web-learn-database-001.firebaseapp.com",
+      databaseURL: "https://fir-web-learn-database-001.firebaseio.com",
+      projectId: "fir-web-learn-database-001",
+      storageBucket: "fir-web-learn-database-001.appspot.com",
+      messagingSenderId: "998320257914",
+      appId: "1:998320257914:web:e4e0b837cc5aef3bf034c3"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="index.js"></script>
+
+</body>
+
+</html>
